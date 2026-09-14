@@ -1,0 +1,12 @@
+/home/amal/Nexus-HFT/build/CMakeFiles/nexus_hft.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/benchmark_phase1.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/benchmark_phase2.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/benchmark_phase3.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/benchmark_phase4.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/generate_pcap.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/benchmark_pcap.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/benchmark_resiliency.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/benchmark_matching.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/benchmark_percentiles.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/edit_cache.dir
+/home/amal/Nexus-HFT/build/CMakeFiles/rebuild_cache.dir
