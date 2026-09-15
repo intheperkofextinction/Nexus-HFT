@@ -35,6 +35,7 @@
            v
 [ Matching Engine Core ] ---> [ Ring-Buffered Telemetry ]
 
+```
 ---
 ### Core Innovations & Optimization Techniques
 1. **Zero-Copy NASDAQ ITCH 5.0 Parsing:** Pointer casting and byte swapping (`be32toh`) directly over raw network buffers (**~188 ns** frame processing).
