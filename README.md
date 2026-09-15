@@ -1,5 +1,11 @@
 # Nexus-HFT: Ultra-Low Latency Trading Engine (C++20)
 
+![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg)
+![Linux](https://img.shields.io/badge/Platform-Linux-FCC624.svg)
+![CMake](https://img.shields.io/badge/CMake-3.20%2B-064F8C.svg)
+![GCC](https://img.shields.io/badge/GCC%2Fg%2B%2B-v11%2B-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 **Nexus-HFT** is a zero-allocation, lock-free High-Frequency Trading (HFT) matching engine and NASDAQ ITCH 5.0 market data processing architecture designed for sub-microsecond tick-to-trade execution.
 
 ---
@@ -18,21 +24,16 @@
 
 ---
 
-## System Architecture
+## Key Systems Architecture
 
-+------------------------+      +---------------------------+
-| Network UDP/PCAP Feed  | ---> | ITCH 5.0 Zero-Copy Parser |
-+------------------------+      +---------------------------+
-|
-v
-+------------------------+      +---------------------------+
-| L3 Static Order Book   | <--- | Lock-Free SPSC Queue      |
-+------------------------+      +---------------------------+
-|
-v
-+------------------------+      +---------------------------+
-| Matching Engine        | ---> | Ring-Buffered Logger      |
-+------------------------+      +---------------------------+
+```text
+[ Network UDP/PCAP Feed ] ---> [ ITCH 5.0 Zero-Copy Parser ]
+                                           |
+                                           v
+[ L3 Static Order Book ] <--- [ Lock-Free SPSC Queue ]
+           |
+           v
+[ Matching Engine Core ] ---> [ Ring-Buffered Telemetry ]
 
 ---
 ### Core Innovations & Optimization Techniques
