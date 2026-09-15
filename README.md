@@ -72,11 +72,15 @@ chmod +x scripts/run_pipeline.sh
 
 ### Repository Structure
 
+```text
+
 Nexus-HFT/
 ├── include/       # Core HFT primitives (OrderBook, MatchingEngine, SPSCQueue)
 ├── src/           # Engine entry point & real-time telemetry dashboard
 ├── tests/         # Phase benchmarks & microsecond tail-latency profilers
 ├── scripts/       # Automations, sysctl socket tuning & pipeline launcher
 └── CMakeLists.txt # Build configuration (-O3 -march=native)
+
+```
 
 
