@@ -59,6 +59,7 @@ git clone [https://github.com/your-username/Nexus-HFT.git](https://github.com/yo
 cd Nexus-HFT
 chmod +x scripts/run_pipeline.sh
 ./scripts/run_pipeline.sh
+```
 
 ---
 
