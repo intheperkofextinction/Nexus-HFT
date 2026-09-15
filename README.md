@@ -46,6 +46,12 @@
 
 ---
 
+### Production Live Terminal Dashboard
+
+<img width="900" height="372" alt="image" src="https://github.com/user-attachments/assets/e00d8c67-65ad-4869-b6cb-2f0d04003940" />
+
+---
+
 ## Quick Start
 
 ### Prerequisites
