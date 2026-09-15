@@ -55,13 +55,14 @@
 ## Quick Start
 
 ### Prerequisites
-* GCC 10+ / Clang 11+ with C++20 support
-* CMake 3.20+
+* **GCC 10+ / Clang 11+** with C++20 support
+* **CMake 3.20+**
 * `libpcap-dev`
 
-### Single-Command Build & Pipeline Run
+### Setup & Execution
+
 ```bash
-git clone [https://github.com/your-username/Nexus-HFT.git](https://github.com/your-username/Nexus-HFT.git)
+git clone [https://github.com/intheperkofextinction/Nexus-HFT.git](https://github.com/intheperkofextinction/Nexus-HFT.git)
 cd Nexus-HFT
 chmod +x scripts/run_pipeline.sh
 ./scripts/run_pipeline.sh
@@ -71,12 +72,11 @@ chmod +x scripts/run_pipeline.sh
 
 ### Repository Structure
 
-include/: Header-only core HFT primitives (OrderBook.hpp, MatchingEngine.hpp, SPSCQueue.hpp, ItchParser.hpp, RDTSCClock.hpp).
-
-src/main.cpp: Real-time interactive pipeline engine and terminal telemetry dashboard.
-
-tests/: Individual phase benchmarks and tail-latency profilers.
-
-scripts/run_pipeline.sh: Automated compilation, sysctl socket tuning, network stream generation, and execution launcher.
+Nexus-HFT/
+├── include/       # Core HFT primitives (OrderBook, MatchingEngine, SPSCQueue)
+├── src/           # Engine entry point & real-time telemetry dashboard
+├── tests/         # Phase benchmarks & microsecond tail-latency profilers
+├── scripts/       # Automations, sysctl socket tuning & pipeline launcher
+└── CMakeLists.txt # Build configuration (-O3 -march=native)
 
 
